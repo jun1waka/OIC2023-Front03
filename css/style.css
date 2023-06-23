@@ -1,0 +1,40 @@
+.calendar {
+  width: 250px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-header {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.calendar-days {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  gap: 5px;
+}
+
+.calendar-days li {
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  border: 1px solid #ccc;
+}
+
+.calendar-date {
+  cursor: pointer;
+}
+
+.calendar-date.today {
+  background-color: #e0e0e0;
+}
